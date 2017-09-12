@@ -52,7 +52,7 @@ const app = {
     },
     //funcion markerPosition
     markerPosition : function(posicion) {
-        let latitude = posicion.coords.latitude;
+        let latitude = posicion.coords.latitude; //tengo que hacer que sean variables globales
         let longitude = posicion.coords.longitude;
 
         let location = new google.maps.InfoWindow();

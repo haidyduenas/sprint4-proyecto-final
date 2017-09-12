@@ -6,42 +6,62 @@ font-family: "Gotham SSm A"
 body{
 	margin: 0 auto;
 	padding: 0px;
-	background-color: #fff,
+	background-color: #fff;
+    text-align: center;
 	font-family: 'Work Sans', sans-serif;
 }
 
 #portada{
-	background-image: url(../img/portada.jpeg);
+	background-image: url(../img/portada.jpg);
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+    position: relative;
 }
 #logo{
     width: 50%;
     height: 30%;
+    position: relative;
 }
 
 #logo img{
     width :100%;
+    position: absolute;
+    top:30%;
+    left: 40%
 }
-.content-div{
-   
-    width: 250px; 
-    height: 100px; 
-    border: 3px solid rgb(255, 0, 191);
+.btnPortada{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border: 3px solid rgb(255, 0, 191, .0);
     background: rgba(255, 0, 191, .0);
+    bottom: 5px;
+    left: 15%;
+    top: 46%;
 }
 
 
 #log{
     position:absolute;
-    bottom:5px;
-    right:10px;
+    color: #ff00bf;
+    border: 3px solid rgb(255, 0, 191);
+    background: rgba(255, 0, 191, .0);
+    right: 70%;
+    bottom: 2%;
+    width: 40%;
 
 }
 #sing{
-    position:absolute;
-    bottom:5px;
-    left:10px;
+    position: absolute;
+    color: #ff00bf;
+    border: 3px solid rgb(255, 0, 191);
+    background: rgba(255, 0, 191, .0);
+    right: 20%;
+    bottom: 2%;
+    width: 40%;
+}
+div a:hover{ 
+    background: #ff00bf;
 }
 /*falta ubicar los botones en la parte de abajo*/
