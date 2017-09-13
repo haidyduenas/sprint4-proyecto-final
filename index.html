@@ -1,51 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Easy Vreco</title>
-    <!--zoom desde mobile-->
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Easy-vreco</title>
-    <!--typografia-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-    <section class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-3">
-                <div class="form-group">
-                    <label for="origin">Origen:</label>
-                    <input type="text" id="origin" name="origin" placeholder="Introduce una ubicación" class="form-control">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3">
-                <div class="form-group">
-                    <label for="destination">Destino:</label>
-                    <input type="text" id="destination" name="destination" placeholder="Introduce una ubicación" class="form-control">
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3">
-                <button id="road" class="btn btn-success"><i class="fa fa-bicycle" aria-hidden="true"></i> Ruta</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-sm-12" id="map">
-                <!-- Aqui ira nuestro mapa -->
-            </div>
-        </div>
-    </section>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--MAPA-->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Tu Archivo main.js -->
-    <script type="text/javascript" src="assets/js/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsNcSwslAV2L3DKhhWQW5jm2QbuFvMRL0&callback=initMap&libraries=places"></script>
-    
+	<div class="container-fluid" id="portada">
+		<div class="col-xs-12" id="logo">
+			<img  class="img-responsive" src="assets/img/logo.png" alt="">
+		</div>
+		<div class="btnPortada col-xs-12">
+			<a href="#" class="btn btn-lg  btn-default col-xs-6 text-uppercase" id="log">log in</a>
+			<a href="singUp.html" class="btn btn-lg btn-default col-xs-6 text-uppercase" id="sing">sing up</a>
+		</div>
+	</div>
 </body>
 </html>

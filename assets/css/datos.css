@@ -1,0 +1,8 @@
+body{
+    height: 100vh;
+}
+
+#btnNext{
+  background-color: #ff00bf;
+  color: #fff;
+}
