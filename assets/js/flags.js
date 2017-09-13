@@ -1,9 +1,7 @@
 
 $(document).ready(function(){	
-//comienza on Chile selecionado, y según el cambio a otro pais se pone el código que corresponda
 $('select[name=selValue]').val(51);
 $('.selectpicker').selectpicker('refresh');
-console.log($(".selectpicker").val());
 var valor = $(".selectpicker").val();
 $(".paises").val("+" + valor);
 

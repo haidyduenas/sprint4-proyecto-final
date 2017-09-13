@@ -7,36 +7,53 @@
     <!--typografia-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/map.css">
 </head>
 <body>
-    <section class="container">
+  <header>
+    <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-3">
-          <button id="find" class="btn btn-success"><i class="fa fa-user" aria-hidden="true"></i> Encuéntrame</button>
+        <div class="user-icon pull-left">
+          <img src="assets/img/user.jpg" class="img-circle">
         </div>
-        <div class="col-md-3 col-sm-3">
-          <div class="form-group">
-            <label for="origin">Origen:</label>
-            <input type="text" id="origin" name="origin" placeholder="Introduce una ubicación" class="form-control">
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3">
-          <div class="form-group">
-            <label for="destination">Destino:</label>
-            <input type="text" id="destination" name="destination" placeholder="Introduce una ubicación" class="form-control">
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3">
-          <button id="road" class="btn btn-success"><i class="fa fa-bicycle" aria-hidden="true"></i> Ruta</button>
+        <img src="assets/img/logo-white.png" alt="logo" id="logo">
+        <div class="user-icon pull-right">
+          <i class="fa fa-gift" aria-hidden="true"></i>
         </div>
       </div>
+    </div>
+  </header>
+  <section class="container" id="container-map">
       <div class="row">
         <div class="col-md-12 col-sm-12" id="map">
                 <!-- Aqui ira nuestro mapa -->
         </div>
+        <form id="btn-input" class="col-xs-12">
+          <div class="row input-btn">
+            <div class="col-md-3 col-sm-3 invisible">
+              <button id="find" class="btn btn-success"><i class="fa fa-user" aria-hidden="true"></i> Encuéntrame</button>
+            </div>
+            <div class="col-md-3 col-sm-3 invisible">
+              <div class="form-group">
+                <label for="origin">Origen:</label>
+                <input type="text" id="origin" name="origin" placeholder="Introduce una ubicación" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="form-group">
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" name="destination" placeholder="Introduce una ubicación" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <button id="road" class="btn btn-success pick-up">Set pick-up</button>
+            </div>
+          </div>
+        </form>
       </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--MAPA-->
     <!-- Latest compiled and minified JavaScript -->
