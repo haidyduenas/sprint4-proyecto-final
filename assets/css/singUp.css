@@ -1,15 +1,52 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
 body {
-height: 100vh;
+line-height: 1;
+background-color: #fff;
+color: #333447;
 }
 ol, ul {
 list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
 }
 table {
 border-collapse: collapse;
 border-spacing: 0;
 }
+body{
+  height: 100vh;
+}
 h4{
-  font-size: 2em;
   margin: 5px 0 0 0;
   padding: 0;
   text-align: center;
@@ -41,6 +78,14 @@ hr {
 .bootstrap-select.btn-group .dropdown-menu{
   width: 170px;
 }
+.flags{
+  width: 22px;
+  height: auto;
+}
+.flagss{
+  width: 22px;
+  height: auto;
+}
 
 .paises{
   width: 15%;
@@ -55,23 +100,45 @@ hr {
 .number{
   width: 55%;
   margin:0 0 0 -7px;
+  margin-top: 7px;
+  border: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+
 }
-
-body{
-
-    
-}
-
-#btnNext{
-  background-color: #ff00bf;
-  color: #fff;
+.btn{
+  border: none;
+  margin-bottom: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 .form-group{
-    display: inline-block;
-    height: 35px;
+  display: inline-block;
+  height: 35px;
+  
+}
+.next-number{
+   border: none;
+   width: 100%;
+   height: 50px;
+   background-color: #FF00BF;
+   color: white;
+}
+.next-number:focus{
+  outline: #c473a1 solid thick;
+}
+#text-verify{
+  font-size: 10px;
+  margin: 0 auto;
+  text-align: center;
 }
 .section-boton{
-    position: absolute;
+  position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
@@ -79,18 +146,10 @@ body{
     text-align: center;
 }
 .col-boton{
-    padding: 0;
+  padding: 0;
 }
-.next-codigo{
-     border: none;
-     width: 100%;
-     height: 50px;
-     background-color: #FF00BF;
-     color: white;
-}
-.input-group{
-  margin: 20px;
-}
-.grupo-check{
-  margin-left: 23px;
+
+ .disabled{
+    background: none repeat scroll 0 0 #FF00BF;
+    cursor: default; 
 }
