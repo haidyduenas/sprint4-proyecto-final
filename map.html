@@ -7,78 +7,42 @@
     <!--typografia-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/singUp.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div id="map">
-    </div>
-    <div class="container over_map">
-      <div class="row text-center">
-        <div class="col-md-3 col-sm-3 col-3"><div class="logo-user" id="btnUser"><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></div></div>
-        <div class="col-md-6 col-sm-6 col-6"><img src="img/logo2.png" width="40%"></div>
-        <div class="col-md-3 col-sm-3 col-3"><div class="logo-gift"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></div></div>
-      </div>
-      <div class="pie">
-        <div class="row div-input-address">
-            <div class="col-md-12 col-sm-12 col-12">
-              <div class="input-group inputs">
-                <span class="input-group-addon start" id="basic-addon1"><i class="fa fa-circle" aria-hidden="true"></i></span>
-                <input id="destination" type="text" class="form-control form-control-lg" placeholder="1200 Av Grau" aria-describedby="basic-addon1">
-              </div>
-            </div>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <button id="find" class="btn btn-success"><i class="fa fa-user" aria-hidden="true"></i> Encuéntrame</button>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-12">
-              <div class="form-group">
-                <button type="button" id="pickup" class="btn btn-lg btn-block btn-lyft">Set Pickup</button>
-              </div>
-            </div>
-        </div>
-      </div>
-      </div>
-
-      <div id="userInfo" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">User Information</h4>
-            </div>
-            <div class="modal-body infoModal">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="form-group">
+            <label for="origin">Origen:</label>
+            <input type="text" id="origin" name="origin" placeholder="Introduce una ubicación" class="form-control">
           </div>
         </div>
-      </div>
-
-      <div id="requestCar" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Yeah!</h4>
-            </div>
-            <div class="modal-body infoModal">
-              <p>Taxi's coming for you!</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript:window.location='home.html'">Close</button>
-            </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="form-group">
+            <label for="destination">Destino:</label>
+            <input type="text" id="destination" name="destination" placeholder="Introduce una ubicación" class="form-control">
           </div>
         </div>
+        <div class="col-md-3 col-sm-3">
+          <button id="road" class="btn btn-success"><i class="fa fa-bicycle" aria-hidden="true"></i> Ruta</button>
+        </div>
       </div>
-
-
-    </div>
-  
-  
-    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5CaMF5XAolZJ-2AJfdPW7F3KEpQl9aOI&libraries=places"></script>
-    <script type="text/javascript" src="assets/js/flags.js"></script>
+      <div class="row">
+        <div class="col-md-12 col-sm-12" id="map">
+                <!-- Aqui ira nuestro mapa -->
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--MAPA-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Tu Archivo main.js -->
+    <script type="text/javascript" src="assets/js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsNcSwslAV2L3DKhhWQW5jm2QbuFvMRL0&callback=initMap&libraries=places"></script>
 </body>
 </html>

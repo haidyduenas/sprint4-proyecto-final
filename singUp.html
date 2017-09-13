@@ -8,54 +8,53 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/singup.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <header>
-      <div class="container">
-        <div class="row"> 
-          <div class="col-xs-2 col-sm-2">
-            <a href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-          </div>
-          <div class="col-xs-8 col-sm-8">
-            <h4>Sign Up</h4>
-          </div>  
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 free-ride">
-            <a href="#">Join now for free rive credit</a>
-          </div>
-        </div>
-      </div>
+        <nav class="navbar navbar-light text-center">
+            <a href="index.html"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
+            <div class="navbar-brand">
+              <h3>Sign Up</h3>
+              <h6>Join now for free ride credit</h6>
+            </div>
+        </nav>
     </header>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12">
-          <div class="form-group countries">
-            <select name="selValue" class="selectpicker show-tick" data-size="3">
-              <option value="56" title='<img class="flagss" src="assets/img/chile.png" alt="chile">' data-content='<img src="assets/img/chile.png" class="flags" alt="chile"> Chile'></option>
-              <option value="52" title='<img class="flagss" src="assets/img/mx.png" alt="mexico">' data-content='<img src="assets/img/mx.png" class="flags" alt="mexico"> México'></option>
-              <option value="51" title='<img class="flagss" src="assets/img/peru.png" alt="peru">' data-content='<img src="assets/img/peru.png" class="flags" alt="peru"> Perú'></option>
-            </select>
-          </div>
-          <input type="text" class="paises form-group">
-          <input type="number" class="number form-group"  maxlength="10">
-        </div>
-        </div>
+    <section class="container-fluid form">
+    	<form>
+			<div class="row">
+			    <div class="col-md-12 col-sm-12 col-xs-12">
+			        <div class="input-group countries">
+			            <select name="selValue" class="selectpicker show-tick" data-size="3">
+			              <option value="56" title='<img class="flagss" src="assets/img/chile.png" alt="chile">' data-content='<img src="assets/img/chile.png" class="flags" alt="chile"> Chile'></option>
+			              <option value="52" title='<img class="flagss" src="assets/img/mx.png" alt="mexico">' data-content='<img src="assets/img/mx.png" class="flags" alt="mexico"> México'></option>
+			              <option value="51" title='<img class="flagss" src="assets/img/peru.png" alt="peru">' data-content='<img src="assets/img/peru.png" class="flags" alt="peru"> Perú'></option>
+			            </select>
+			        </div>
+			          <span><input type="text" class="paises in-group"></span>
+			          <span><input type="number" class="number form-group"  maxlength="10"></span>
+			    </div>
+			</div>
+	        <div class="row"> 
+	        	<div class="form-group row text-center info">
+	         		<div class="col-sm-12 col-xs-12">
+	            		<div class="form-check">
+	              			<label class="form-check-label">
+	                		<input class="form-check-input dissabled" id="agreeUser" type="checkbox" > I agree to Lyft's <a href="#"> Terms of Service</a>
+	              			</label>
+	            		</div>
+	        		</div>
+				</div>
+			</div>
+		</div>
         <div class="row">
-          <div class="col-xs-12 col-sm-12">
-            <p id="text-verify">We'll send you a text to verify your phone</p>
-          </div>
-        </div>
-    </div>
-    <div class="container-fluid section-boton">
-      <div class="row">
-          <div class="col-xs-12 col-sm-12 col-boton">
-            <a href="datos.html"><button class="next-number">Next</button></a>
-          </div>
-      </div>
-    </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                    <button href="datos.html" type="button" class="btn btn-lg btn-block" id="btnNext">Next</button>
+                </div>
+            </div>
+        </form>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
